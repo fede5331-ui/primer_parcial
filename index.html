@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica de Git en equipo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.5;
+      color: #222;
+    }
+    h1 { color: #1a5c8a; }
+    h2 { margin-top: 32px; border-bottom: 2px solid #ddd; padding-bottom: 4px; }
+    li { margin: 4px 0; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    .nota { background: #fff7d6; border-left: 4px solid #e0b400; padding: 8px 12px; }
+  </style>
+</head>
+<body>
+
+  <h1>Práctica de Git en equipo</h1>
+  <p>Página de prueba para practicar el flujo de trabajo con ramas, commits y pull requests.</p>
+
+  <h2>Integrantes</h2>
+  <p class="nota">Cada integrante agrega su propia línea en la lista, en su propia rama.</p>
+  <ul id="integrantes">
+    <!-- Agregá tu línea debajo de esta -->
+    <li>Federico Morales</li>
+  </ul>
+
+  <h2>Tareas del equipo</h2>
+  <ul id="tareas">
+    <!-- Agregá una tarea debajo de esta -->
+    <li>Crear la rama personal</li>
+  </ul>
+
+  <h2>Pasos para practicar</h2>
+  <ol>
+    <li>Hacer el fork del repositorio y clonarlo.</li>
+    <li>Crear una rama propia: <code>git checkout -b mi-rama</code></li>
+    <li>Editar este archivo (agregar tu nombre y una tarea).</li>
+    <li>Confirmar los cambios: <code>git add .</code> y <code>git commit -m "mensaje"</code></li>
+    <li>Subir la rama: <code>git push origin mi-rama</code></li>
+    <li>Crear el pull request en GitHub.</li>
+    <li>Revisar el pull request de un compañero y fusionarlo.</li>
+    <li>Sincronizar con el repositorio original: <code>git fetch</code> y <code>git merge</code></li>
+  </ol>
+
+  <h2>Conflictos</h2>
+  <p>
+    Si dos integrantes editan la misma línea, Git marca un conflicto al fusionar.
+    Probalo a propósito cambiando el texto de abajo en dos ramas distintas:
+  </p>
+  <p id="mensaje">Este texto es el original.</p>
+
+</body>
+</html>
